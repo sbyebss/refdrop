@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="RefDrop Project Page">
+
+  <title>RefDrop: Controllable Consistency in Image or Video Generation via Reference Feature Guidance</title>
+
+  <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+  <script src="./static/js/index.js"></script>
+
+  <link href="./static/css/font.css" rel="stylesheet" type="text/css">
+  <link href="./static/css/style.css" rel="stylesheet" type="text/css">
+  <style>
+    /* CSS to center the text horizontally within the body or a specific div */
+    .center-text {
+        text-align: center;  /* Aligns text to the center horizontally */
+        margin-top: 20px;   /* Adds space above the text, optional */
+    }
+  </style>
+  <style>
+    /* Container holding the images */
+    .image-container {
+        display: flex; /* Enables flexbox layout which is perfect for lining items in a row */
+        justify-content: center; /* Centers the images horizontally */
+        align-items: center; /* Aligns images vertically in the center */
+        gap: 20px; /* Adds space between the images */
+        margin: 0; /* Removes default margin */
+        padding: 0; /* Removes default padding */        
+    }
+    /* Style for the images to ensure they fit well */
+    .image-container img {
+        width: 45%; /* Adjust this value to change the image size */
+        height: auto; /* Keeps the aspect ratio of the image */
+    }
+    .text-before-images {
+      margin-bottom: 20px; /* Adds space between the text and the images */
+    }    
+  </style>
+  <style>
+    /* Base styling for all subtitles */
+    .subtitle {
+        font-size: 25px; /* Large font size */
+        font-weight: bold; /* Bold font weight */
+        margin-bottom: 10px; /* Space below each subtitle */
+        margin-top: 40px; /* Space above each subtitle */        
+        text-align: center; /* Centers text horizontally */        
+    }
+    /* Specific color for each subtitle */
+    .red { color: #E57373; }      /* Soft Red */
+    .blue { color: #64B5F6; }     /* Light Blue */
+    .green { color: #81C784; }    /* Pastel Green */
+    .purple { color: #BA68C8; }   /* Muted Purple */
+    .orange { color: #FFB74D; }   /* Warm Orange */
+  </style>  
+  <style>
+    .small_teaser img {
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Centers the image within the teaser div */
+    }
+  </style>  
+  <style>
+    .container {
+        width: 1000px; /* Fixed width */
+        display: flex; /* Enables flexbox */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center children vertically in the container */
+    }
+    .carousel2 {
+        width: 95%; /* Full width of the container */
+    }
+    .card-image {
+        display: flex; /* Enables flexbox */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        height: 500px; /* Example fixed height */
+    }
+  </style>  
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<div class="section">
+  <!-- === Title Starts === -->
+  <div class="header">
+    <!-- <div class="logo">
+      <a href="https://mmlab.ie.cuhk.edu.hk/" target="_blank"><img src="./common/cuhk.jfif"></a>
+    </div> -->
+    <div class="title", style="font-size: 24pt; padding-top: 10pt;">  <!-- Set padding as 10 if title is with two lines. -->
+      RefDrop: Controllable Consistency in Image or Video Generation via Reference Feature Guidance
+		<!-- <br>
+		<font color="grey" size="4">arXiv Preprint.</font> -->
+    </div>
+  </div>
+  <!-- === Title Ends === -->
+  <div class="author">
+    <a href="https://sbyebss.github.io/" target="_blank">Jiaojiao Fan</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+    <a href="https://xavihart.github.io/" target="_blank">Haotian Xue</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+    <a href="https://qsh-zh.github.io/" target="_blank">Qinsheng Zhang</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
+    <a href="https://yongxin.ae.gatech.edu/" target="_blank">Yongxin Chen</a><sup>1</sup>
+  </div>
+  <div class="institution">
+    <sup>1</sup>Georgia Tech&nbsp;&nbsp;&nbsp;
+    <sup>2</sup>NVIDIA
+  </div>
+
+  <div class="column has-text-centered">
+    <div class="publication-links">
+      <!-- arXiv Link modified to "Coming Soon" and points to current page. -->
+      <span class="link-block">
+        <a href="#" class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="ai ai-arxiv"></i>
+          </span>
+          <span>arXiv (Coming Soon)</span>
+        </a>
+      </span>
+      <!-- Code Link modified to "Coming Soon" and points to current page. -->
+      <span class="link-block">
+        <a href="#" class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>GitHub (Coming Soon)</span>
+        </a>
+      </span>
+    </div>    
+
+  </div>
+  TLDR: Our novel self-attention layer boosts control over feature injection from a single / multiple reference images, enhancing both subject consistency in image generation or temporal consistency in video generation.  
+  <div class="teaser">
+    <img src="./images_png/teaser3.png">
+  </div>  
+</div>
+</div>
+
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+  <div class="title">Abstract</div>
+  <div class="body">
+    There is a rapidly growing interest in controlling consistency across multiple generated images using diffusion models. Among various methods, recent works have found that simply manipulating attention modules by <b>concatenating features from multiple reference images</b> provides an efficient approach to enhancing consistency without fine-tuning. Despite its popularity and success, few studies have elucidated the underlying mechanisms that contribute to its effectiveness. In this work, we reveal that the popular approach <b>is a linear interpolation of image self-attention and cross-attention between synthesized content and reference features</b>, with a constant rank-1 coefficient. Motivated by this observation, we find that a rank-1 coefficient is not necessary and simplifies the controllable generation mechanism. The resulting algorithm, which we coin as RefDrop, allows users to control the influence of reference context in a direct and precise manner. Besides further enhancing consistency in single-subject image generation, our method also enables more interesting applications, such as <b>the consistent generation of multiple subjects, suppressing specific features to encourage more diverse content, and high-quality personalized video generation by boosting temporal consistency.</b> Even compared with state-of-the-art image-prompt-based generators, such as IP-Adapter, RefDrop is competitive in terms of controllability and quality while avoiding the need to train a separate image encoder for feature injection from reference images, making it a versatile plug-and-play solution for any image or video diffusion model.
+  </div>
+  <div class="teaser">
+    <img src="./images_png/coeff_simplepdf.png">
+  </div>    
+  <!-- <div class="teaser">
+    <img src="./content/teaser_half.png">
+  </div> -->
+  <div class="center-text">
+    We allow flexible control over the reference effect through a reference strength coefficient
+  </div>  
+</div>
+<!-- === Overview Section Ends === -->
+
+<div class="section">
+  <div class="title">Framework Overview</div>
+  <div class="body">
+      <table width="100%" style="margin: 20pt 0; text-align: center;">
+          <tr>
+              <td><img src="./images_png/diagram.png" width="100%"></td>
+          </tr>
+      </table>
+      <b>Overview of RefDrop Framework.</b> During each diffusion denoising step, we facilitate the injection of features from a <i>generated</i> reference image into the generation process of other images through <span style="color: rgb(230, 128, 230); white-space: nowrap">RFG</span> (Reference Feature Guidance). The <span style="color: rgb(230, 128, 230); white-space: nowrap">RFG</span> layer produces a linear combination of the attention outputs from both the standard and referenced routes. A negative coefficient <b>c</b> encourages divergence of <b>I<sub>i</sub></b> from <b>I<sub>1</sub></b>, while a positive coefficient fosters consistency between them.
+  </div>
+</div>
+
+<div class="section">
+  <div class="title">Experimental Results</div>
+  <div class="body">
+      <h2 class="subtitle blue">Consistent image generation</h2>  
+      <p class="text-before-images">By using a single generated image as a reference and applying a positive reference strength, we enhance subject consistency across multiple generated images.</p>
+      <div class="container">
+          <div class="image-container">
+              <img src="./images_png/comparison_image_single_subject_6_our_coeff_0.4_seed_1.png" alt="Second Image">
+              <img src="./images_png/comparison_image_multi_human_0_our_coeff_0.4_seed_5.png" alt="First Image">
+          </div>
+      </div>
+      
+      <h2 class="subtitle red">Blending multiple reference images</h2>  
+      <p class="text-before-images">By using multiple generated images as references and applying the positive reference strength, we can create a single cohesive object that merges features from all the references.</p>
+      <div class="container" width=1000px>
+        <div id="results-carousel2" class="carousel2 results-carousel">
+          <div class="card-image" style="text-align: center;">
+            <img src="./images_png/blend_compare.png" width="60%">
+          </div>
+          <div class="card-image" style="text-align: center;">
+            <img src="./images_png/three_blend_supple.png" width="90%">
+          </div>            
+          <div class="card-image" style="text-align: center;">
+            <img src="./images_png/dog_cat1.png" width="90%">
+          </div>   
+          <div class="card-image" style="text-align: center;">
+            <img src="./images_png/dog2.png" width="90%">
+          </div>                   
+        </div>
+      </div>     
+      
+      <h2 class="subtitle purple">Diverse image generation</h2>     
+      <p class="text-before-images">By using a single generated image as a reference and applying a negative reference strength, we can enhance diversity across generated images.</p>
+      <div class="container">
+          <div class="image-container">
+              <img src="./images_png/comparison_image_single_subject_0_our_coeff_-0.3_seed_1.png" alt="Second Image">
+              <img src="./images_png/comparison_image_single_subject_8_our_coeff_-0.3_seed_1.png" alt="First Image">
+          </div>
+      </div>
+      
+      <h2 class="subtitle green">Improving temporal consistency in video generation</h2>           
+      <p class="text-before-images">By using the first frame as a reference and applying a positive reference strength, we can enhance temporal consistency in video generation.</p>      
+      <table width="100%" style="margin: 0 0; text-align: center;">
+          <tr>
+              <td><img src="./images_png/pv1.png" width="100%"></td>  
+          </tr>
+      </table>
+      <table width="100%" style="margin: 0 0; text-align: center;">
+        <tr>
+            <td><img src="./images_png/pv2.png" width="100%"></td>  
+        </tr>
+    </table>      
+      <p style="text-align: center;">
+          ****************<a href="https://refdrop-anonymouspaper-f37a6c745f264e0ff8b994669d71e9ca5f34d07a.gitlab.io/index.html" style="color: #58c760;">Please see this link for video visualization.</a>****************
+      </p>
+  </div>
+</div>
+<!-- === Reference Section Starts === -->
+<div class="section">
+  <div class="bibtex">BibTeX</div>
+<pre>
+@article{fan2024refdrop,
+    title={RefDrop: Controllable Consistency in Image or Video Generation via Reference Feature Guidance},
+    author={Fan, Jiaojiao and Xue, Haotian and Zhang, Qinsheng and Chen, Yongxin},
+    journal={arXiv preprint arXiv:***},
+    year={2024}
+}
+</pre>
+</body>
+</html>
